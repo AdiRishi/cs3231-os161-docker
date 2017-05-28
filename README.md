@@ -26,6 +26,14 @@ cd root
 # Run the kernel
 sys161 kernel
 ```
+
+## Mounting folders to the docker container
+If you want to be able to re-compile the kernel with your code changes without closing the container, you will have to volume mount those folders into the container.
+
+Fortunately, this is very easy and can be done by editing run_image.sh. Some folders have already been mounted, so follow those examples if you want to mount another folder.
+
+Be careful about mounting folders that will be touched during compile, this will result in the permissions on the folder being set to root, which is undesirable.
+
 ### Some notes on this workflow
 Currently, the os161 source code is copied over to the image. This is less than ideal since you will need to re-build the image every time you change the source code
 

@@ -12,7 +12,7 @@ docker \
     --volume "$(pwd)/src/kern/syscall:/home/os161-src/kern/syscall" \
     --volume "$(pwd)/src/kern/vfs:/home/os161-src/kern/vfs" \
     --volume "$(pwd)/src/kern/vm:/home/os161-src/kern/vm" \
-    --volume "$(pwd)/src/kern/arch/mips/syscall:/home/os161-src/kern/arch/mips/syscall" \
+    --volume "$(pwd)/src/kern/arch:/home/os161-src/kern/arch" \
     --volume "$(pwd)/src/userland/testbin:/home/os161-src/userland/testbin" \
     --volume "$(pwd)/testFiles/:/home/root/testFiles" \
     os161-ass3
